@@ -1,90 +1,65 @@
-<!DOCTYPE html> 
-<html lang="en"> 
-<head> 
-    <meta charset="UTF-8"> 
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
-    <title>Sell Books</title> 
+* 
+{ 
+    margin: 0; 
+    padding: 0; 
+     
+} 
  
-    <link rel="shortcut icon" href="./img/favi-logo.ico" type="image/x-icon"> 
-    <link rel="stylesheet" href="./css/navbar.css"> 
-    <link rel="stylesheet" href="./css/sell_form.css"> 
+body
+{ 
+    background: url(../img/sell_form.jpg);
+      
+    background: cover; 
+    width: 100%; 
+    height: 100%; 
+    background-size: cover; 
+    background-position: center; 
  
-    <link rel="preconnect" href="https://fonts.googleapis.com"> 
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400&family=Raleway:wght@500&display=swap" rel="stylesheet"> 
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap" rel="stylesheet">
-<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400&family=Raleway:wght@500&display=swap" rel="stylesheet">
+} 
  
  
-</head> 
-<body> 
-    <div class = "page2"> 
-        <navbar> 
-            <div class="navbar"> 
-                <img src="./img/logo.png" alt="Logo" class="logo"> 
-                <ul> 
-                    <li><a href="./index.html">Home</a></li> 
-                    <li><a href="./buy_form.html" target="_blank">Buy Books</a></li>
-                <li><a href="./sell_form.html" target="_blank">Sell Books</a></li> 
-                    <li><a href="">About Us</a></li> 
-                    <li><a href="" target="_blank">Contact Us</a></li>
-                    <li><a href="./login.html">Login</a></li> 
-                </ul> 
-            </div> 
-        </navbar> 
+.form{ 
+    padding: 25px; 
+    margin: 25px; 
+    margin-left: 20%; 
+    margin-right: 40%; 
+    border: rgb(0, 0, 0) 3px solid; 
+    border-radius: 20px; 
+    display: flex; 
+    justify-content: center;
+    font-family: 'Montserrat', sans-serif;
+     
+} 
+.heading 
+{ 
+    padding: 20px;
+    font-weight: 800;
  
-        <div class="form"> 
-            <form action=""> 
-                <h1 class="form_heading">Sell Your Books</h1> 
-                <hr> 
-                <h2 class = "heading">About you</h2> 
-                <p>Name <input type="text" name="name" id="name" placeholder="Enter your Name" required></p> 
-                <p>Contact Number <input type="number" name="phone" id="phone" required placeholder="9631748563"></p> 
-                <p>Email <input type="email" name="email" id="email" required placeholder="Enter your email id"></p> 
-                <p>Address <input type="text" name="address" id="address" required placeholder="Your address"></p> 
+} 
+p 
+{ 
+    padding: 10px; 
+    font-size: 20px; 
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; 
  
-                <hr> 
-                 
-                <h2 class = "heading">About The Book</h2> 
-                <p>Name of the book <input type="text" name="bookName" id="bookName" placeholder="Enter the name of your book"></p> 
-                <p>Author <input type="text" name="author" id="author" required></p> 
-                <p>Publication <input type="text" name="publication" id="publication" required></p> 
-                <p>Book Language <input type="text" name="" id="" required></p> 
-                <p>Date of buying <input type="date" name="" id=""></p> 
-                 
-                <p class="condition">Condition 
-                    <select name="Condition" id="Condition" required> 
-                        <option value="">Select condition</option> 
-                        <option value="just-bought">Just bought</option> 
-                        <option value="new">New</option> 
-                        <option value="old">Old</option> 
-                    </select> 
-                </p> 
- 
-                <fieldset> 
-                    <legend class="text_legend">Torn or not</legend> 
-                    <p class="torn"> 
-                         
-                        Not Torn   <input type="radio" name="torn" id="NotTorn"><br> 
-                        Cover Torn <input type="radio" name="torn" id="coverTorn"> <br> 
-                        Pages Torn <input type="radio" name="torn" id="PageTorn"> 
-                    </p> 
-                </fieldset> 
-                <br>
-                 
-                <fieldset> 
-                    <legend class="text_legend">Upload image</legend> 
- 
-                    <p class = "imgUpload">Upload cover page <tr><input type="file" name="coverpage" id="img"></p>
-                    <p class = "imgUpload">Upload back image <tr><input type="file" name="backpage" id="img"></p> 
- 
-                    <p class = "imgUpload">Upload side image <tr><input type="file" name="sideimg" id="img"></p> 
- 
-                </fieldset> 
-                
-            </form> 
-        </div> 
-    </div> 
-</body> 
+} 
+input[type="text"], 
+        input[type="email"], 
+        input[type="number"], 
+        input[type="date"], 
+        select, 
+        textarea { 
+            width: 100%; 
+            padding: 10px; 
+            border: 1px solid #d7bebe; 
+            margin: 5px; 
+        } 
+
+.form_heading {
+    font-family: 'Josefin Sans', sans-serif;
+    
+}
+.imgUpload, .torn
+{
+    color: white;
+}
